@@ -1,13 +1,14 @@
-{{#each book as |book|}}
+{{#each books as |book|}}
 
 <div data-id="{{book.id}}">
-  <h3>{{book.title}}</p>
+  <h3>Title: {{book.title}}</h3>
   <p>
     {{#if book.author}}
-        {{book.author}}
+        Author: {{book.author}}
       {{else}}
         unknown author.
       {{/if}}
   </p>
+<hr>
 </div>
 {{/each}}
